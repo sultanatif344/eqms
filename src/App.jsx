@@ -20,10 +20,9 @@ const App = () => {
             <Option value="A">0002</Option>
             <Option >5542</Option>
           </Select>
-          <Select size="md" label="Region">
+          <Select size="md" label="District">
             <Option> South </Option>
             <Option> East </Option>
-
           </Select>
           <Select size="md" label="Cluster">
             <Option>South</Option>
@@ -34,22 +33,75 @@ const App = () => {
           </div>
         </div>
         <br />
-        <div className="flex gap-2 justify-center items-center">
+        <div className="flex gap-2 justify-start">
           <div className="main rounded-lg bg-blue-50 w-3/6 shadow-sm">
-            <div className="branchDate p-3">
-              <p className="text-center"><span className="font-semibold">Branch:</span> Gulshan-e-Iqbal , Block 2, Karachi</p>
-              <p className="mt-1 text-center"><span className="font-semibold">District:</span> Karachi East District</p>
+            <div className="branchDate py-3 px-5">
+              <p ><span className="font-semibold">Date:</span> 02 May, 2023</p>
+              <p ><span className="font-semibold">Branch:</span> Gulshan-e-Iqbal , Block 2, Karachi</p>
+
             </div>
           </div>
 
           <div className="main rounded-lg bg-blue-50 w-3/6 shadow-sm">
-            <div className="branchDate p-3">
-              <p className="text-center"><span className="font-semibold">Date:</span> 02 May</p>
-              <p className="mt-1 text-center"><span className="font-semibold">Branch:</span> 0024</p>
+            <div className="branchDate py-3 px-5">
+              <p className="mt-1"><span className="font-semibold">District:</span> Karachi East District</p>
+              <p className="mt-1"><span className="font-semibold">Cluster:</span> 0024</p>
             </div>
           </div>
         </div>
       </section>
+      <br />
+
+      <section>
+        <table className="w-full text-left text-gray-500">
+          <thead className="text-xs text-gray-700 uppercase bg-blue-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" className="px-2 py-3 bg-blue-500 text-white">
+                Branch Head Count (U-Connect)
+              </th>
+              <th scope="col" className="px-6 py-3">
+                OPS Officer
+              </th>
+              <th scope="col" className="px-2 py-3">
+                BSO
+              </th>
+              <th scope="col" className="px-2 py-3">
+                BSS
+              </th>
+              <th scope="col" className="px-2 py-3">
+                BOM
+              </th>
+              <th scope="col" className="px-2 py-3">
+                Total
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="bg-white border-b">
+              <th scope="row" className="px-2 py-4 font-medium text-green-500  ">
+
+              </th>
+              <td className="px-6 py-4">
+                1
+              </td>
+              <td className="px-6 py-4">
+                3
+              </td>
+              <td className="px-6 py-4">
+                1
+              </td>
+              <td className="px-6 py-4">
+                0
+              </td>
+              <td className="px-6 py-4">
+                5
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </section>
+
       <br />
       {/* Section Table */}
       <section >
@@ -242,56 +294,7 @@ const App = () => {
           <h1 className="text-xl">Total Transaction Amt: <span className="text-red-500 font-bold">89,162,998</span></h1>
         </div>
       </section>
-      <br />
-      <section>
-        <table className="w-full text-left text-gray-500">
-          <thead className="text-xs text-gray-700 uppercase bg-blue-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-              <th scope="col" className="px-2 py-3 bg-blue-500 text-white">
-                Branch Head Count (U-Connect)
-              </th>
-              <th scope="col" className="px-6 py-3">
-                OPS Officer
-              </th>
-              <th scope="col" className="px-2 py-3">
-                BSO
-              </th>
-              <th scope="col" className="px-2 py-3">
-                BSS
-              </th>
-              <th scope="col" className="px-2 py-3">
-                BOM
-              </th>
-              <th scope="col" className="px-2 py-3">
-                Total
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="bg-white border-b">
-              <th scope="row" className="px-2 py-4 font-medium text-green-500  ">
 
-              </th>
-              <td className="px-6 py-4">
-                1
-              </td>
-              <td className="px-6 py-4">
-                3
-              </td>
-              <td className="px-6 py-4">
-                1
-              </td>
-              <td className="px-6 py-4">
-                0
-              </td>
-              <td className="px-6 py-4">
-                5
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
-      </section>
       <br />
       <section>
         <div className="relative overflow-x-auto">
